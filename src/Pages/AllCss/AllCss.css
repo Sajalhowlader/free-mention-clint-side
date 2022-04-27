@@ -2,3 +2,48 @@
     background: #1b1230;
     height: 80px;
 }
+
+input.search-field {
+    margin: 20px 0px;
+    width: 450px;
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    background: #0b030e;
+    border-radius: 20px;
+    color: white;
+}
+
+.services-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.single-service-container img {
+    width: 300px;
+}
+
+.inf-container {
+    position: relative;
+    border-radius: 17px;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+button.service-btn {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    outline: none;
+    border: none;
+    padding: 22px 0px;
+    /* overflow: hidden; */
+    /* border-radius: 10px; */
+}
+
+;
