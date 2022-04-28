@@ -1,8 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import headerLogo from '../../../images/logo-1.png'
 import '../../AllCss/AllCss.css'
 const Header = () => {
+    const navigate = useNavigate()
+    const handleSingIn = () => {
+        navigate("/login")
+    }
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" className='nav-container' >
@@ -23,7 +28,7 @@ const Header = () => {
 
                         </Nav>
                         <Nav>
-                            <button>SING IN</button>
+                            <button onClick={handleSingIn} className='user-btn'> SING IN</button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
